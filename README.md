@@ -20,3 +20,4 @@ _FUTURE PLANS_
 2. Handle multiple layers with animated masks in a single composition.
 3. Process multiple masks on a single layer.
 4. Export to useful formats.
+5. Optionally export additional data about vertices for less angular shapes (inTangents, outTangents, closed)
