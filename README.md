@@ -8,7 +8,7 @@ _HOW TO USE_
 1. Select a layer with an animated mask on it.
 2. Open the script by selecting File -> Scripts -> Run Script File... and selecting the script.
 
-A file called test.txt will be created in the same directory as the script with the position information.
+A file for each mask will be created in the same directory as the script with the position information.
 
 _KNOWN BUGS_
 
