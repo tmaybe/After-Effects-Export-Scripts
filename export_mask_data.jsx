@@ -1,6 +1,8 @@
 
 function getAndWriteData(comp, layer)
 {
+	// scale the points by this factor
+	var scale = 1024 / 1440;
 	// total number of masks in the layer
 	var mnum = layer.Masks.numProperties;
 	// total number of frames in the layer
@@ -41,7 +43,7 @@ function getAndWriteData(comp, layer)
 				var numv = vertices.length;
 				for (var v = 0; v < numv; v++)
 				{
-					writeme += "				<string>{" + vertices[v][0] + ", " + vertices[v][1] + "}</string>\n";
+					writeme += "				<string>{" + (vertices[v][0] * scale) + ", " + (vertices[v][1] * scale) + "}</string>\n";
 				}
 				writeme += '			</array>';
 		

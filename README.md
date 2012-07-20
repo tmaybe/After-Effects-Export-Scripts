@@ -5,7 +5,7 @@ This is an After Effects script for extracting position information about animat
 
 _HOW TO USE_
 
-1. Select a layer with one or more animated mask on it.
+1. Select a layer with one or more animated masks on it.
 2. Open the script by selecting File -> Scripts -> Run Script File... and selecting the script.
 
 An output file will be created in the same directory as the script with the position information.
