@@ -16,7 +16,6 @@ The script will generate data for each frame of a composition, so if the selecte
 
 _FUTURE PLANS_
 
-1. Limit data export to the bounds of the layer rather than the composition.
-2. Handle multiple layers with animated masks in a single composition.
-3. Export to useful formats.
-4. Optionally export additional data about vertices for less angular shapes (inTangents, outTangents, closed)
+1. Handle multiple layers with animated masks in a single composition.
+2. Export to useful formats.
+3. Optionally export additional data about vertices for less angular shapes (inTangents, outTangents, closed)
