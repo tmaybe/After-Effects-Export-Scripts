@@ -10,12 +10,14 @@ _HOW TO USE_
 
 A file for each mask will be created in the same directory as the script with the position information.
 
-_KNOWN BUGS_
+_HOW I USE IT_
 
-The script will generate data for each frame of a composition, so if the selected layer is shorter than the composition, it will be padded with duplicate data at the beginning and/or end.
+I'm using it to generate shape data which I use to draw shapes dynamically in an iPad app.
 
 _FUTURE PLANS_
 
 1. Handle multiple layers with animated masks in a single composition.
 2. Export to useful formats.
 3. Optionally export additional data about vertices for less angular shapes (inTangents, outTangents, closed)
+4. Add sample source and output files
+5. Add sample files for reading and drawing the data in an iPad app
