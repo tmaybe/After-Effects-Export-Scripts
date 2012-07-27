@@ -23,7 +23,7 @@ function getAndWriteData(comp, layer)
 		file.writeln('<array>');
 		
 		// step through the frames
-	    for (var t = layer.inPoint; t < layer.outPoint - comp.frameDuration; t += comp.frameDuration)
+	    for (var t = layer.inPoint; t < layer.outPoint; t += comp.frameDuration)
 	    {
 			// write the frame header
 			file.writeln('	<dict>');
