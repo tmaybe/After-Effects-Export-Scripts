@@ -39,13 +39,21 @@ function getAndWriteData(comp, layer)
 				var myshape = layer.Masks.property(mc + 1).property(1).valueAtTime(t, false);
 				var vertices = myshape.vertices;
 				// write the vertices to a line of the file
-				var writeme = '			<array>\n';
+				var writeme = '			<dict>\n';
+				writeme += '				<key>id</key>\n';
+				writeme += '				<string>' + layer.Masks.property(mc + 1).name + '</string>\n';
+				writeme += '				<key>shape</key>\n';
+				writeme += '				<array>\n';
 				var numv = vertices.length;
 				for (var v = 0; v < numv; v++)
 				{
-					writeme += "				<string>{" + (vertices[v][0] * scale) + ", " + (vertices[v][1] * scale) + "}</string>\n";
+					// scale the values and round them to four decimal places
+					var sx = Math.round((vertices[v][0] * scale) * 10000) / 10000;
+					var sy = Math.round((vertices[v][1] * scale) * 10000) / 10000;
+					writeme += "					<string>{" + sx + ", " + sy + "}</string>\n";
 				}
-				writeme += '			</array>';
+				writeme += '				</array>\n';
+				writeme += '			</dict>';
 		
 				file.writeln(writeme);
 			}
